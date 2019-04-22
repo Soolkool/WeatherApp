@@ -1,0 +1,36 @@
+/*
+    Modified By: Vedanth Srinivasan
+    Original Author: https://github.com/sumchat/Weather
+    Modification Date: 4/22/2019 16:30pm
+*/
+
+
+//------------------------------------------------------------------------------
+import QmlProject 1.1
+
+Project {
+    mainFile: "WeatherApp.qml"
+
+    QmlFiles {
+        directory: "."
+        recursive: true
+    }
+
+    JavaScriptFiles {
+        directory: "."
+        recursive: true
+    }
+
+    ImageFiles {
+        directory: "."
+        recursive: true
+    }
+
+    Files {
+        directory: "."
+        recursive: true
+        filter: "*.json;*.html;*.txt;*.conf"
+    }
+
+    importPaths: []
+}
